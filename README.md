@@ -1,3 +1,6 @@
+```mermaid
+erDiagram
+
 Table User {
   user_id int [pk]
   name varchar

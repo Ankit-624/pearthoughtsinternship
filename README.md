@@ -2,7 +2,7 @@
 erDiagram
 
 Table User {
-  user_id int [pk]
+  user_id int []
   name varchar
   email varchar
   phone varchar
@@ -11,7 +11,7 @@ Table User {
 }
 
 Table Doctor {
-  doctor_id int [pk]
+  doctor_id int []
   specialization varchar
   experience int
   consultation_fee float
@@ -19,7 +19,7 @@ Table Doctor {
 }
 
 Table Patient {
-  patient_id int [pk]
+  patient_id int []
   age int
   gender varchar
   medical_notes varchar
@@ -27,7 +27,7 @@ Table Patient {
 }
 
 Table Appointment {
-  appointment_id int [pk]
+  appointment_id int []
   appointment_date date
   appointment_time time
   status varchar
@@ -37,7 +37,7 @@ Table Appointment {
 }
 
 Table Appointment_Slot {
-  slot_id int [pk]
+  slot_id int []
   date date
   start_time time
   end_time time
@@ -46,7 +46,7 @@ Table Appointment_Slot {
 }
 
 Table Chat_Message {
-  message_id int [pk]
+  message_id int []
   message_text varchar
   timestamp datetime
   sender_type varchar
@@ -54,7 +54,7 @@ Table Chat_Message {
 }
 
 Table Appointment_History {
-  history_id int [pk]
+  history_id int []
   action_type varchar
   action_time datetime
   previous_date date
